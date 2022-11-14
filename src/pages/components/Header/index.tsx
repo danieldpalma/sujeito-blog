@@ -15,14 +15,22 @@ export function Header() {
           <Image src={logo} alt="Logo Sujeito Programador"></Image>
         </Link>
         <nav>
-          <ActiveLink href="/" activeClassName={styles.active}>
-            <Link href="/">Home</Link>
+          <ActiveLink href="/" activeClassName={styles.active} legacyBehavior>
+            <a>Home</a>
           </ActiveLink>
-          <ActiveLink href="/conteudos" activeClassName={styles.active}>
-            <Link href="/">Home</Link>
+          <ActiveLink
+            href="/conteudos"
+            activeClassName={styles.active}
+            legacyBehavior
+          >
+            <a>Conteúdos</a>
           </ActiveLink>
-          <ActiveLink href="/sobre" activeClassName={styles.active}>
-            <Link href="/">Home</Link>
+          <ActiveLink
+            href="/sobre"
+            activeClassName={styles.active}
+            legacyBehavior
+          >
+            <a>Quem somos?</a>
           </ActiveLink>
         </nav>
 
